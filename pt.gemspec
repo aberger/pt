@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.13"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", "~> 2.0"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "pry"
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency 'aruba'
@@ -32,6 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency    'hirb-unicode', '~> 0.0.5', '>= 0.0.5'
   spec.add_dependency    'colored', '~> 1.2'
   spec.add_dependency    'highline'
-  spec.add_dependency    'tracker_api', '~> 1.6.0'
+  spec.add_dependency    'tracker_api', '~> 1.15.0'
   spec.add_dependency    'thor'
 end

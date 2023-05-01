@@ -82,7 +82,7 @@ module PT
     end
 
     def save_config(config, path)
-      File.new(path, 'w') unless File.exists?(path)
+      File.new(path, 'w') unless File.exist?(path)
       File.open(path, 'w') {|f| f.write(config.to_yaml) }
     end
 

@@ -32,7 +32,7 @@ module PT
       end
     end
 
-    %w[show tasks open assign comments label estimate start finish deliver accept reject done].each do |action|
+    %w[show tasks open assign comment label estimate start finish deliver accept reject done].each do |action|
       desc "#{action} [id]", "#{action} story"
       method_option "interactive", aliases: :i, type: :boolean, default: true, desc: 'enable interactive method'
       define_method(action.to_sym) do |story_id = nil|
